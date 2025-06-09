@@ -427,11 +427,46 @@
     <section id="reviews" class="py-20 bg-gradient-to-b from-[#f5f5f5] to-white section-padding">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">What Our Guests Say</h2>
+          <h2 class="text-4xl font-bold mb-4 playfair">What Our Guests Say</h2>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
             Discover why our guests keep coming back to Riverlap Homestay. Each review tells a unique story of comfort, adventure, and authentic Kerala hospitality.
           </p>
           
+          <!-- Overall Rating -->
+          <div class="max-w-4xl mx-auto mb-16 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 shadow-lg transform hover:scale-[1.02] transition-transform duration-300">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+              <div class="text-center md:text-left">
+                <div class="text-7xl font-bold text-[#e67e22] mb-2 animate-pulse">4.9</div>
+                <div class="flex justify-center md:justify-start gap-1 mb-2">
+                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0s"></i>
+                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0.1s"></i>
+                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0.2s"></i>
+                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0.3s"></i>
+                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0.4s"></i>
+                </div>
+                <p class="text-gray-600">Based on 100+ reviews</p>
+              </div>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="transform hover:scale-110 transition-transform duration-300">
+                  <div class="text-3xl font-bold text-[#e67e22]">98%</div>
+                  <p class="text-sm text-gray-600">Cleanliness</p>
+                </div>
+                <div class="transform hover:scale-110 transition-transform duration-300">
+                  <div class="text-3xl font-bold text-[#e67e22]">99%</div>
+                  <p class="text-sm text-gray-600">Location</p>
+                </div>
+                <div class="transform hover:scale-110 transition-transform duration-300">
+                  <div class="text-3xl font-bold text-[#e67e22]">97%</div>
+                  <p class="text-sm text-gray-600">Service</p>
+                </div>
+                <div class="transform hover:scale-110 transition-transform duration-300">
+                  <div class="text-3xl font-bold text-[#e67e22]">96%</div>
+                  <p class="text-sm text-gray-600">Value</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Booking Platform Links -->
           <div class="flex flex-wrap justify-center items-center gap-6 mb-12">
             <a href="https://www.google.com/travel/hotels/entity/CgoIusqH8tr_xbtFEAE" target="_blank" class="group">
@@ -461,401 +496,166 @@
             </a>
           </div>
         </div>
-        
-        <!-- Overall Rating -->
-        <div class="max-w-4xl mx-auto mb-16 bg-white rounded-2xl shadow-lg p-8">
-          <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div class="text-center md:text-left">
-              <div class="text-6xl font-bold text-[#e67e22] mb-2">4.9</div>
-              <div class="flex justify-center md:justify-start gap-1 mb-2">
-                <i class="fas fa-star text-[#e67e22]"></i>
-                <i class="fas fa-star text-[#e67e22]"></i>
-                <i class="fas fa-star text-[#e67e22]"></i>
-                <i class="fas fa-star text-[#e67e22]"></i>
-                <i class="fas fa-star text-[#e67e22]"></i>
+
+        <!-- Reviews Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Location & Setting -->
+          <div class="group">
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                  <i class="fas fa-map-marker-alt text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Location & Setting</h3>
               </div>
-              <p class="text-gray-600">Based on 100+ reviews</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div class="text-2xl font-bold text-[#e67e22]">98%</div>
-                <p class="text-sm text-gray-600">Cleanliness</p>
-              </div>
-              <div>
-                <div class="text-2xl font-bold text-[#e67e22]">99%</div>
-                <p class="text-sm text-gray-600">Location</p>
-              </div>
-              <div>
-                <div class="text-2xl font-bold text-[#e67e22]">97%</div>
-                <p class="text-sm text-gray-600">Service</p>
-              </div>
-              <div>
-                <div class="text-2xl font-bold text-[#e67e22]">96%</div>
-                <p class="text-sm text-gray-600">Value</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Location & Setting -->
-        <div class="mb-16">
-          <h3 class="text-2xl font-semibold mb-8 text-center flex items-center justify-center gap-3">
-            <i class="fas fa-map-marker-alt text-[#e67e22]"></i>
-            Location & Setting
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-              <p class="text-lg mb-4">
+              <p class="text-gray-700 mb-4">
                 "Riverlap is such an idyllic place. It is perfectly located between the river and the sea. You can easily enjoy both. The property is surrounded by coconut trees and has a beautiful natural pond."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">A</div>
+                  <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">A</div>
                   <div>
                     <p class="font-semibold">Alina</p>
                     <p class="text-sm text-gray-500">Germany</p>
                   </div>
                 </div>
-                <a href="https://www.airbnb.co.in/rooms/20978837" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-airbnb"></i>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-              <p class="text-lg mb-4">
-                "The location is absolutely perfect - right between the backwaters and the beach. The natural surroundings are breathtaking, and the property itself is a peaceful oasis."
-              </p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">S</div>
-                  <div>
-                    <p class="font-semibold">Sarah</p>
-                    <p class="text-sm text-gray-500">United Kingdom</p>
-                  </div>
-                </div>
-                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-tripadvisor"></i>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-              <p class="text-lg mb-4">
-                "A hidden gem in Kerala! The property is beautifully situated with amazing views of the backwaters and just a short walk to a pristine beach. The natural pond adds to the charm."
-              </p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">M</div>
-                  <div>
-                    <p class="font-semibold">Michael</p>
-                    <p class="text-sm text-gray-500">Australia</p>
-                  </div>
-                </div>
-                <a href="https://www.booking.com" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fas fa-hotel"></i>
+                <a href="https://www.airbnb.co.in/rooms/20978837" target="_blank" class="text-blue-500 hover:text-blue-600 transition-colors">
+                  <i class="fab fa-airbnb text-xl"></i>
                 </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Host & Service -->
-        <div class="mb-16">
-          <h3 class="text-2xl font-semibold mb-8 text-center flex items-center justify-center gap-3">
-            <i class="fas fa-concierge-bell text-[#e67e22]"></i>
-            Host & Service
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
+          <!-- Host & Service -->
+          <div class="group">
+            <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                  <i class="fas fa-concierge-bell text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Host & Service</h3>
               </div>
-              <p class="text-lg mb-4">
+              <p class="text-gray-700 mb-4">
                 "Idyllic location. This is the real Kerala. Vinod and his people are the most kind and thoughtful hosts. They went above and beyond to make our stay comfortable."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">C</div>
+                  <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold">C</div>
                   <div>
                     <p class="font-semibold">Conor</p>
                     <p class="text-sm text-gray-500">United Kingdom</p>
                   </div>
                 </div>
-                <a href="https://www.airbnb.co.in/rooms/20978837" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-airbnb"></i>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-              <p class="text-lg mb-4">
-                "Terrific location and bungalows with exceptional food. Vinod is a terrific host arranging and delivering us to Ayurvedic Dr and massage. His attention to detail is remarkable."
-              </p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">M</div>
-                  <div>
-                    <p class="font-semibold">Michelle</p>
-                    <p class="text-sm text-gray-500">United States</p>
-                  </div>
-                </div>
-                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-tripadvisor"></i>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-              <p class="text-lg mb-4">
-                "The staff is incredibly friendly and helpful. They arranged everything we needed, from local tours to transportation. Vinod's knowledge of the area is invaluable."
-              </p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">T</div>
-                  <div>
-                    <p class="font-semibold">Thomas</p>
-                    <p class="text-sm text-gray-500">France</p>
-                  </div>
-                </div>
-                <a href="https://www.goibibo.com/hotels/hotel-listing/?checkin=20250609&checkout=20250610&roomString=1-2-0&searchText=River%20Lap%20Homestay" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fas fa-hotel"></i>
+                <a href="https://www.airbnb.co.in/rooms/20978837" target="_blank" class="text-emerald-500 hover:text-emerald-600 transition-colors">
+                  <i class="fab fa-airbnb text-xl"></i>
                 </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Food & Dining -->
-        <div class="mb-16">
-          <h3 class="text-2xl font-semibold mb-8 text-center flex items-center justify-center gap-3">
-            <i class="fas fa-utensils text-[#e67e22]"></i>
-            Food & Dining
-          </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
+          <!-- Food & Dining -->
+          <div class="group">
+            <div class="bg-gradient-to-br from-rose-50 to-rose-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-full bg-rose-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                  <i class="fas fa-utensils text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Food & Dining</h3>
               </div>
-              <p class="text-lg mb-4">
+              <p class="text-gray-700 mb-4">
                 "The food is out of this world! Authentic Kerala cuisine prepared with fresh local ingredients. The breakfast spread is amazing, and the seafood is to die for."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">P</div>
+                  <div class="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold">P</div>
                   <div>
                     <p class="font-semibold">Priya</p>
                     <p class="text-sm text-gray-500">India</p>
                   </div>
                 </div>
-                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-tripadvisor"></i>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-              <p class="text-lg mb-4">
-                "We enjoyed every meal during our stay. The traditional Kerala breakfast was a highlight, and the dinner options were delicious. The staff accommodated our dietary preferences perfectly."
-              </p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">E</div>
-                  <div>
-                    <p class="font-semibold">Emma</p>
-                    <p class="text-sm text-gray-500">Canada</p>
-                  </div>
-                </div>
-                <a href="https://www.airbnb.co.in/rooms/20978837" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-airbnb"></i>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-            <p class="text-lg mb-4">
-                "The home-cooked meals were exceptional. We especially loved the fresh seafood and traditional Kerala dishes. The outdoor dining area adds to the experience."
-              </p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">D</div>
-                  <div>
-                    <p class="font-semibold">David</p>
-                    <p class="text-sm text-gray-500">United Kingdom</p>
-                  </div>
-                </div>
-                <a href="https://www.booking.com" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fas fa-hotel"></i>
+                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-rose-500 hover:text-rose-600 transition-colors">
+                  <i class="fab fa-tripadvisor text-xl"></i>
                 </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Activities & Experiences -->
-        <div class="mb-16">
-          <h3 class="text-2xl font-semibold mb-8 text-center flex items-center justify-center gap-3">
-            <i class="fas fa-compass text-[#e67e22]"></i>
-            Activities & Experiences
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
+          <!-- Activities & Experiences -->
+          <div class="group">
+            <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                  <i class="fas fa-compass text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Activities & Experiences</h3>
               </div>
-              <p class="text-lg mb-4">
+              <p class="text-gray-700 mb-4">
                 "The backwater canoe ride was magical, and the fishing experience with local fishermen was unforgettable. The property offers the perfect balance of relaxation and adventure."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">J</div>
+                  <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">J</div>
                   <div>
                     <p class="font-semibold">James</p>
                     <p class="text-sm text-gray-500">Australia</p>
                   </div>
                 </div>
-                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-tripadvisor"></i>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-              <p class="text-lg mb-4">
-                "We loved the morning walks to the beach and the evening canoe rides. The Ayurvedic massage arranged by the host was one of the best experiences of our trip."
-              </p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">M</div>
-                  <div>
-                    <p class="font-semibold">Maria</p>
-                    <p class="text-sm text-gray-500">Spain</p>
-                  </div>
-                </div>
-                <a href="https://www.airbnb.co.in/rooms/20978837" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-airbnb"></i>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-            <p class="text-lg mb-4">
-                "The property offers so many activities - from beach walks to backwater exploration. The local sightseeing tours arranged by the host were informative and well-organized."
-              </p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">L</div>
-                  <div>
-                    <p class="font-semibold">Lisa</p>
-                    <p class="text-sm text-gray-500">Germany</p>
-                  </div>
-                </div>
-                <a href="https://www.goibibo.com/hotels/hotel-listing/?checkin=20250609&checkout=20250610&roomString=1-2-0&searchText=River%20Lap%20Homestay" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fas fa-hotel"></i>
+                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-purple-500 hover:text-purple-600 transition-colors">
+                  <i class="fab fa-tripadvisor text-xl"></i>
                 </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Overall Experience -->
-        <div>
-          <h3 class="text-2xl font-semibold mb-8 text-center flex items-center justify-center gap-3">
-            <i class="fas fa-heart text-[#e67e22]"></i>
-            Overall Experience
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
+          <!-- Overall Experience -->
+          <div class="group">
+            <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                  <i class="fas fa-heart text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Overall Experience</h3>
               </div>
-              <p class="text-lg mb-4">
+              <p class="text-gray-700 mb-4">
                 "A perfect blend of comfort and authentic Kerala experience. The property is beautiful, the staff is amazing, and the location is ideal. We can't wait to come back!"
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">R</div>
+                  <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold">R</div>
                   <div>
                     <p class="font-semibold">Robert</p>
                     <p class="text-sm text-gray-500">United States</p>
                   </div>
                 </div>
-                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-tripadvisor"></i>
+                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-amber-500 hover:text-amber-600 transition-colors">
+                  <i class="fab fa-tripadvisor text-xl"></i>
                 </a>
               </div>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
+          </div>
+
+          <!-- Value & Comfort -->
+          <div class="group">
+            <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                  <i class="fas fa-home text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Value & Comfort</h3>
               </div>
-              <p class="text-lg mb-4">
+              <p class="text-gray-700 mb-4">
                 "This is exactly what we were looking for - a peaceful retreat with authentic local experiences. The property is well-maintained, and every detail is taken care of."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">S</div>
+                  <div class="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center text-white font-bold">S</div>
                   <div>
                     <p class="font-semibold">Sophie</p>
                     <p class="text-sm text-gray-500">France</p>
                   </div>
                 </div>
-                <a href="https://www.airbnb.co.in/rooms/20978837" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fab fa-airbnb"></i>
-                </a>
-              </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fas fa-quote-left text-[#e67e22] text-xl"></i>
-                <div class="h-px flex-1 bg-gradient-to-r from-[#e67e22] to-transparent"></div>
-              </div>
-            <p class="text-lg mb-4">
-                "Riverlap Homestay exceeded our expectations in every way. The perfect combination of natural beauty, comfort, and authentic Kerala hospitality. Highly recommended!"
-              </p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-[#e67e22] rounded-full flex items-center justify-center text-white font-bold">J</div>
-                  <div>
-                    <p class="font-semibold">John</p>
-                    <p class="text-sm text-gray-500">United Kingdom</p>
-                  </div>
-                </div>
-                <a href="https://www.booking.com" target="_blank" class="text-sm text-gray-500 hover:text-[#e67e22] transition-colors">
-                  <i class="fas fa-hotel"></i>
+                <a href="https://www.airbnb.co.in/rooms/20978837" target="_blank" class="text-cyan-500 hover:text-cyan-600 transition-colors">
+                  <i class="fab fa-airbnb text-xl"></i>
                 </a>
               </div>
             </div>
