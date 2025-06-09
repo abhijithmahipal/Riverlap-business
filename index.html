@@ -51,6 +51,12 @@
       .navbar-scrolled .logo-text {
         color: #1a1a1a;
       }
+      .navbar-scrolled #mobile-menu-button {
+        color: #1a1a1a;
+      }
+      .navbar-scrolled #mobile-menu-button:hover {
+        color: #e67e22;
+      }
       .scroll-down {
         animation: bounce 2s infinite;
       }
@@ -114,6 +120,9 @@
       }
       .section-padding {
         padding-top: 5rem;
+      }
+      .hero-title {
+        line-height: 1.2;
       }
     </style>
   </head>
@@ -202,14 +211,12 @@
     >
       <div class="absolute inset-0 hero-overlay"></div>
       <div class="container mx-auto px-6 relative z-10">
-        <div class="max-w-4xl">
-          <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white playfair leading-tight text-shadow">
-            Experience the Magic of Kerala at Riverlap Homestay
+        <div class="max-w-4xl hero-content">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white playfair leading-tight text-shadow">
+            <span class="block">Experience the Magic of</span>
+            <span class="block">Kerala at Riverlap Homestay</span>
           </h1>
-          <p class="text-xl md:text-2xl mb-8 text-gray-100 font-light leading-relaxed text-shadow max-w-2xl">
-            Discover a hidden paradise where traditional charm meets modern comfort, nestled between pristine backwaters and golden beaches.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
+          <div class="flex flex-col sm:flex-row gap-4 hero-buttons">
             <a
               href="#contact"
               class="inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
@@ -223,6 +230,14 @@
             >
               Learn More
               <i class="fas fa-info-circle ml-2"></i>
+            </a>
+            <a
+              href="https://www.google.com/travel/hotels/entity/CgoIusqH8tr_xbtFEAE"
+              target="_blank"
+              class="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm text-white px-4 py-4 rounded-full font-medium text-lg hover:bg-white/20 transition-all duration-300"
+              title="See us on Google"
+            >
+              <i class="fab fa-google text-xl"></i>
             </a>
           </div>
         </div>
@@ -840,27 +855,27 @@
               You can book your stay through any of these trusted platforms:
             </p>
             <div class="flex flex-wrap items-center justify-start gap-4 mb-6">
-              <a href="https://www.airbnb.co.in/rooms/20978837" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-40 h-16">
+              <a href="https://www.airbnb.co.in/rooms/16503560" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-40 h-16">
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png"
                   alt="Book on Airbnb"
                   class="w-full h-full object-contain"
                 />
               </a>
-              <a href="https://www.booking.com" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-40 h-16">
+              <a href="https://www.booking.com/Share-HayKcc" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-40 h-16">
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png"
                   alt="Book on Booking.com"
                   class="w-full h-full object-contain"
                 />
               </a>
-              <a href="https://www.goibibo.com/hotels/hotel-listing/?checkin=20250609&checkout=20250610&roomString=1-2-0&searchText=River%20Lap%20Homestay" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-40 h-16">
+              <a href="https://www.goibibo.com/hotels/river-lap-homestay-hotel-in-nileshwar-4893217758211010052/" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-40 h-16">
                 <div class="flex items-center gap-2">
                   <i class="fas fa-hotel text-2xl text-[#e67e22]"></i>
                   <span class="font-semibold text-gray-700">Goibibo</span>
                 </div>
               </a>
-              <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201809261346204375" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-40 h-16">
+              <a href="https://www.makemytrip.com/hotels/river_lap_homestay-details-nileshwar.html" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-40 h-16">
                 <div class="flex items-center gap-2">
                   <i class="fas fa-plane-departure text-2xl text-[#e67e22]"></i>
                   <span class="font-semibold text-gray-700">MakeMyTrip</span>
