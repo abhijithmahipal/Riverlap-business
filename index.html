@@ -15,11 +15,11 @@
     />
     <style>
       body {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         scroll-behavior: smooth;
       }
       .playfair {
-        font-family: 'Playfair Display', serif;
+        font-family: "Playfair Display", serif;
       }
       .navbar-blur {
         backdrop-filter: blur(10px);
@@ -27,10 +27,14 @@
         height: 4rem;
       }
       .hero-overlay {
-        background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.7)
+        );
       }
       .text-shadow {
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       }
       .hover-scale {
         transition: transform 0.3s ease;
@@ -61,7 +65,11 @@
         animation: bounce 2s infinite;
       }
       @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
           transform: translateY(0);
         }
         40% {
@@ -128,59 +136,95 @@
   </head>
   <body class="bg-[#f5f5f5] text-gray-800">
     <!-- Navbar -->
-    <nav id="navbar" class="fixed w-full z-50 navbar-blur bg-white/10 text-white py-2 transition-all duration-300">
-      <div class="container mx-auto flex justify-between items-center px-6 h-full">
+    <nav
+      id="navbar"
+      class="fixed w-full z-50 navbar-blur bg-white/10 text-white py-2 transition-all duration-300"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center px-6 h-full"
+      >
         <a href="#" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-full flex items-center justify-center text-[#2c3e50] font-bold text-xl playfair shadow-lg">
+          <div
+            class="w-10 h-10 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-full flex items-center justify-center text-[#2c3e50] font-bold text-xl playfair shadow-lg"
+          >
             RH
           </div>
-          <span class="text-xl font-bold text-white playfair tracking-wide logo-text">
+          <span
+            class="text-xl font-bold text-white playfair tracking-wide logo-text"
+          >
             Riverlap Homestay
           </span>
         </a>
         <ul class="hidden md:flex space-x-8">
           <li>
-            <a href="#home" class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full">
+            <a
+              href="#home"
+              class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full"
+            >
               HOME
             </a>
           </li>
           <li>
-            <a href="#about" class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full">
+            <a
+              href="#about"
+              class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full"
+            >
               ABOUT
             </a>
           </li>
           <li>
-            <a href="#amenities" class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full">
+            <a
+              href="#amenities"
+              class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full"
+            >
               AMENITIES
             </a>
           </li>
           <li>
-            <a href="#gallery" class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full">
+            <a
+              href="#gallery"
+              class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full"
+            >
               GALLERY
             </a>
           </li>
           <li>
-            <a href="#activities" class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full">
+            <a
+              href="#activities"
+              class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full"
+            >
               ACTIVITIES
             </a>
           </li>
           <li>
-            <a href="#reviews" class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full">
+            <a
+              href="#reviews"
+              class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full"
+            >
               REVIEWS
             </a>
           </li>
           <li>
-            <a href="#getting-here" class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full">
+            <a
+              href="#getting-here"
+              class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full"
+            >
               GETTING HERE
             </a>
           </li>
           <li>
-            <a href="#contact" class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full">
+            <a
+              href="#contact"
+              class="relative py-1 text-sm font-medium tracking-wide hover:text-amber-300 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-300 after:transition-all hover:after:w-full"
+            >
               CONTACT
             </a>
           </li>
         </ul>
-        <button id="mobile-menu-button" class="md:hidden text-white hover:text-amber-300 transition-colors z-[1001]">
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-white hover:text-amber-300 transition-colors z-[1001]"
+        >
           <i class="fas fa-bars text-xl"></i>
         </button>
       </div>
@@ -196,19 +240,25 @@
           <a href="#about" class="block py-3 text-lg font-medium">ABOUT</a>
         </li>
         <li>
-          <a href="#amenities" class="block py-3 text-lg font-medium">AMENITIES</a>
+          <a href="#amenities" class="block py-3 text-lg font-medium"
+            >AMENITIES</a
+          >
         </li>
         <li>
           <a href="#gallery" class="block py-3 text-lg font-medium">GALLERY</a>
         </li>
         <li>
-          <a href="#activities" class="block py-3 text-lg font-medium">ACTIVITIES</a>
+          <a href="#activities" class="block py-3 text-lg font-medium"
+            >ACTIVITIES</a
+          >
         </li>
         <li>
           <a href="#reviews" class="block py-3 text-lg font-medium">REVIEWS</a>
         </li>
         <li>
-          <a href="#getting-here" class="block py-3 text-lg font-medium">GETTING HERE</a>
+          <a href="#getting-here" class="block py-3 text-lg font-medium"
+            >GETTING HERE</a
+          >
         </li>
         <li>
           <a href="#contact" class="block py-3 text-lg font-medium">CONTACT</a>
@@ -223,12 +273,18 @@
     <section
       id="home"
       class="relative h-screen flex items-center"
-      style="background-image: url('assets/2.jpg'); background-size: cover; background-position: center;"
+      style="
+        background-image: url('assets/2.jpg');
+        background-size: cover;
+        background-position: center;
+      "
     >
       <div class="absolute inset-0 hero-overlay"></div>
       <div class="container mx-auto px-6 relative z-10">
         <div class="max-w-4xl hero-content">
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white playfair leading-tight text-shadow">
+          <h1
+            class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white playfair leading-tight text-shadow"
+          >
             <span class="block">Experience the Magic of</span>
             <span class="block">Kerala at Riverlap Homestay</span>
           </h1>
@@ -240,12 +296,14 @@
               Book Your Stay
               <i class="fas fa-arrow-right ml-2"></i>
             </a>
-            
           </div>
         </div>
       </div>
       <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <a href="#about" class="text-white hover:text-amber-300 transition-colors scroll-down">
+        <a
+          href="#about"
+          class="text-white hover:text-amber-300 transition-colors scroll-down"
+        >
           <i class="fas fa-chevron-down text-2xl"></i>
         </a>
       </div>
@@ -261,49 +319,75 @@
           <div class="space-y-8">
             <div class="group hover:scale-105 transition-all duration-300">
               <div class="flex items-center gap-4 mb-3">
-                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-map-marker-alt text-xl"></i>
                 </div>
-                <h3 class="text-2xl font-semibold text-gray-800">Perfect Location</h3>
+                <h3 class="text-2xl font-semibold text-gray-800">
+                  Perfect Location
+                </h3>
               </div>
               <p class="text-gray-700 pl-16">
-                Nestled between pristine backwaters and golden beaches in Nileshwar, Kerala. Just a short walk to a deserted beach.
+                Nestled between pristine backwaters and golden beaches in
+                Nileshwar, Kerala. Just a short walk to a deserted beach.
               </p>
             </div>
 
             <div class="group hover:scale-105 transition-all duration-300">
               <div class="flex items-center gap-4 mb-3">
-                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-home text-xl"></i>
                 </div>
-                <h3 class="text-2xl font-semibold text-gray-800">Traditional Charm</h3>
+                <h3 class="text-2xl font-semibold text-gray-800">
+                  Traditional Charm
+                </h3>
               </div>
               <p class="text-gray-700 pl-16">
-                Three spacious villas surrounded by coconut groves and a natural pond, offering authentic Kerala architecture and comfort.
+                Three spacious villas surrounded by coconut groves and a natural
+                pond, offering authentic Kerala architecture and comfort.
               </p>
             </div>
 
             <div class="group hover:scale-105 transition-all duration-300">
               <div class="flex items-center gap-4 mb-3">
-                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-star text-xl"></i>
                 </div>
-                <h3 class="text-2xl font-semibold text-gray-800">Guest Experience</h3>
+                <h3 class="text-2xl font-semibold text-gray-800">
+                  Guest Experience
+                </h3>
               </div>
               <p class="text-gray-700 pl-16">
-                From homemade Kerala meals to backwater canoe rides, every moment here becomes a cherished memory.
+                From homemade Kerala meals to backwater canoe rides, every
+                moment here becomes a cherished memory.
               </p>
             </div>
 
             <div class="group hover:scale-105 transition-all duration-300">
               <div class="flex items-center gap-4 mb-3">
-                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-heart text-xl"></i>
                 </div>
-                <h3 class="text-2xl font-semibold text-gray-800">Guest Reviews</h3>
+                <h3 class="text-2xl font-semibold text-gray-800">
+                  Guest Reviews
+                </h3>
               </div>
               <p class="text-gray-700 pl-16">
-                Don't just take our word for it - <a href="#reviews" class="text-rose-500 hover:text-rose-600 transition-colors duration-300 font-medium inline-flex items-center gap-1">hear what our guests say <i class="fas fa-arrow-right text-sm"></i></a> about their experiences at Riverlap.
+                Don't just take our word for it -
+                <a
+                  href="#reviews"
+                  class="text-rose-500 hover:text-rose-600 transition-colors duration-300 font-medium inline-flex items-center gap-1"
+                  >hear what our guests say
+                  <i class="fas fa-arrow-right text-sm"></i
+                ></a>
+                about their experiences at Riverlap.
               </p>
             </div>
           </div>
@@ -313,7 +397,9 @@
               alt="Villa Exterior"
               class="rounded-lg shadow-lg w-full h-[500px] object-cover transform group-hover:scale-[1.02] transition-transform duration-500"
             />
-            <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+            <div
+              class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+            >
               <div class="flex items-center gap-3">
                 <div class="text-4xl text-[#e67e22] animate-pulse">
                   <i class="fas fa-star"></i>
@@ -338,70 +424,60 @@
         <div class="max-w-4xl mx-auto">
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center"
+              >
                 <i class="fas fa-wifi text-xl text-[#e67e22]"></i>
               </div>
               <span class="font-medium">Free Wi-Fi</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center"
+              >
                 <i class="fas fa-parking text-xl text-[#e67e22]"></i>
               </div>
               <span class="font-medium">Free Parking</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center"
+              >
                 <i class="fas fa-snowflake text-xl text-[#e67e22]"></i>
               </div>
               <span class="font-medium">Air Conditioning</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
-                <i class="fas fa-fan text-xl text-[#e67e22]"></i>
-              </div>
-              <span class="font-medium">Ceiling Fan</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center"
+              >
                 <i class="fas fa-shower text-xl text-[#e67e22]"></i>
               </div>
               <span class="font-medium">Hot Water</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center"
+              >
                 <i class="fas fa-utensils text-xl text-[#e67e22]"></i>
               </div>
               <span class="font-medium">Kerala Meals</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center"
+              >
                 <i class="fas fa-water text-xl text-[#e67e22]"></i>
               </div>
               <span class="font-medium">Backwater Views</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center"
+              >
                 <i class="fas fa-umbrella-beach text-xl text-[#e67e22]"></i>
               </div>
               <span class="font-medium">Beach Access</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
-                <i class="fas fa-tree text-xl text-[#e67e22]"></i>
-              </div>
-              <span class="font-medium">Garden View</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
-                <i class="fas fa-paw text-xl text-[#e67e22]"></i>
-              </div>
-              <span class="font-medium">Pet Friendly</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
-                <i class="fas fa-broom text-xl text-[#e67e22]"></i>
-              </div>
-              <span class="font-medium">Daily Cleaning</span>
             </div>
           </div>
         </div>
@@ -414,17 +490,17 @@
         <h2 class="text-4xl font-bold text-center mb-8">
           Explore Riverlap Homestay
         </h2>
-        
+
         <!-- Gallery Tabs -->
         <div class="flex flex-wrap justify-center gap-4 mb-12">
-          <button 
+          <button
             class="gallery-tab active px-6 py-3 rounded-full font-medium transition-all duration-300 bg-[#e67e22] text-white shadow-lg hover:shadow-xl transform hover:scale-105"
             data-category="exterior"
           >
             <i class="fas fa-home mr-2"></i>
             Exterior
           </button>
-          <button 
+          <button
             class="gallery-tab px-6 py-3 rounded-full font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             data-category="interior"
           >
@@ -438,38 +514,56 @@
           <!-- Exterior Category -->
           <div id="exterior" class="gallery-category active">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/1.jpg"
                   alt="Villa Exterior View"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Villa Exterior</h3>
                   <p class="text-sm">Traditional Kerala architecture</p>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/2.jpg"
                   alt="Property Grounds"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Property Grounds</h3>
                   <p class="text-sm">Surrounded by coconut groves</p>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/3.jpg"
                   alt="Natural Pond"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Natural Pond</h3>
                   <p class="text-sm">Peaceful water feature</p>
                 </div>
@@ -480,38 +574,56 @@
           <!-- Interior Category -->
           <div id="interior" class="gallery-category hidden">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/4.jpg"
                   alt="Living Area"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Living Area</h3>
                   <p class="text-sm">Comfortable and spacious</p>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/5.jpg"
                   alt="Bedroom"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Bedroom</h3>
                   <p class="text-sm">Cozy and well-appointed</p>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/6.jpg"
                   alt="Dining Area"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Dining Area</h3>
                   <p class="text-sm">Perfect for meals</p>
                 </div>
@@ -522,62 +634,110 @@
           <!-- Amenities Category -->
           <div id="amenities" class="gallery-category hidden">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"
+                >
                   <i class="fas fa-wifi text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Free Wi-Fi</h3>
                   <p class="text-sm">Stay connected</p>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center"
+                >
                   <i class="fas fa-utensils text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Kerala Meals</h3>
                   <p class="text-sm">Authentic local cuisine</p>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center"
+                >
                   <i class="fas fa-water text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Backwater Views</h3>
                   <p class="text-sm">Scenic water views</p>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center"
+                >
                   <i class="fas fa-umbrella-beach text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Beach Access</h3>
                   <p class="text-sm">Short walk to beach</p>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center"
+                >
                   <i class="fas fa-tree text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Garden View</h3>
                   <p class="text-sm">Lush surroundings</p>
                 </div>
               </div>
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center"
+                >
                   <i class="fas fa-paw text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Pet Friendly</h3>
                   <p class="text-sm">Bring your pets</p>
                 </div>
@@ -589,25 +749,30 @@
     </section>
 
     <!-- Activities Section -->
-    <section id="activities" class="py-20 bg-gradient-to-b from-white to-[#f5f5f5] section-padding">
+    <section
+      id="activities"
+      class="py-20 bg-gradient-to-b from-white to-[#f5f5f5] section-padding"
+    >
       <div class="container mx-auto px-4">
         <h2 class="text-4xl font-bold text-center mb-8">
           Experience Kerala's Magic
         </h2>
         <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-16">
-          From peaceful backwater experiences to exciting local adventures, discover the perfect blend of relaxation and exploration at Riverlap Homestay.
+          From peaceful backwater experiences to exciting local adventures,
+          discover the perfect blend of relaxation and exploration at Riverlap
+          Homestay.
         </p>
 
         <!-- Activities Tabs -->
         <div class="flex flex-wrap justify-center gap-4 mb-12">
-          <button 
+          <button
             class="activity-tab active px-6 py-3 rounded-full font-medium transition-all duration-300 bg-[#e67e22] text-white shadow-lg hover:shadow-xl transform hover:scale-105"
             data-category="inhouse"
           >
             <i class="fas fa-home mr-2"></i>
             In-House Activities
           </button>
-          <button 
+          <button
             class="activity-tab px-6 py-3 rounded-full font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             data-category="nearby"
           >
@@ -622,99 +787,151 @@
           <div id="inhouse" class="activity-category active">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <!-- Backwater Canoe Ride -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/1.jpg"
                   alt="Backwater Canoe Ride"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Backwater Canoe Ride</h3>
                   <p class="text-sm">Traditional boat experience</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-[#e67e22] text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-[#e67e22] text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-star mr-1"></i>Popular
                 </div>
               </div>
 
               <!-- Traditional Fishing -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/2.jpg"
                   alt="Traditional Fishing"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Traditional Fishing</h3>
                   <p class="text-sm">Learn local fishing techniques</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-fish mr-1"></i>Local
                 </div>
               </div>
 
               <!-- Kerala Cooking Class -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/6.jpg"
                   alt="Kerala Cooking Class"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Kerala Cooking Class</h3>
                   <p class="text-sm">Learn authentic recipes</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-utensils mr-1"></i>Cultural
                 </div>
               </div>
 
               <!-- Yoga & Meditation -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center"
+                >
                   <i class="fas fa-om text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Yoga & Meditation</h3>
                   <p class="text-sm">Peaceful morning sessions</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-peace mr-1"></i>Wellness
                 </div>
               </div>
 
               <!-- Garden Walk -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/3.jpg"
                   alt="Garden Walk"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Garden Walk</h3>
                   <p class="text-sm">Explore the lush surroundings</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-leaf mr-1"></i>Nature
                 </div>
               </div>
 
               <!-- Cultural Evening -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center"
+                >
                   <i class="fas fa-music text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Cultural Evening</h3>
                   <p class="text-sm">Traditional music & dance</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-theater-masks mr-1"></i>Cultural
                 </div>
               </div>
@@ -725,95 +942,151 @@
           <div id="nearby" class="activity-category hidden">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <!-- Beach Visit -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/2.jpg"
                   alt="Nileshwar Beach"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Nileshwar Beach</h3>
                   <p class="text-sm">5 min walk from property</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-umbrella-beach mr-1"></i>5 min
                 </div>
               </div>
 
               <!-- Bekal Fort -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center"
+                >
                   <i class="fas fa-castle text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Bekal Fort</h3>
                   <p class="text-sm">Historic 17th-century fort</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-gray-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-gray-600 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-car mr-1"></i>30 min
                 </div>
               </div>
 
               <!-- Backwater Cruise -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
                 <img
                   src="assets/1.jpg"
                   alt="Backwater Cruise"
                   class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Backwater Cruise</h3>
                   <p class="text-sm">Houseboat experience</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-cyan-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-cyan-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-ship mr-1"></i>45 min
                 </div>
               </div>
 
               <!-- Ayurvedic Spa -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center"
+                >
                   <i class="fas fa-spa text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Ayurvedic Spa</h3>
                   <p class="text-sm">Traditional wellness treatments</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-heart mr-1"></i>20 min
                 </div>
               </div>
 
               <!-- Local Market -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center"
+                >
                   <i class="fas fa-shopping-bag text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Local Market</h3>
                   <p class="text-sm">Traditional crafts & spices</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-store mr-1"></i>15 min
                 </div>
               </div>
 
               <!-- Temple Visit -->
-              <div class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300">
-                <div class="w-full h-64 bg-gradient-to-br from-yellow-500 to-amber-500 flex items-center justify-center">
+              <div
+                class="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-[1.02] transition-all duration-300"
+              >
+                <div
+                  class="w-full h-64 bg-gradient-to-br from-yellow-500 to-amber-500 flex items-center justify-center"
+                >
                   <i class="fas fa-om text-6xl text-white"></i>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   <h3 class="font-semibold text-lg">Temple Visit</h3>
                   <p class="text-sm">Ancient temples & spirituality</p>
                 </div>
-                <div class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div
+                  class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
                   <i class="fas fa-pray mr-1"></i>25 min
                 </div>
               </div>
@@ -824,42 +1097,78 @@
     </section>
 
     <!-- Reviews Section -->
-    <section id="reviews" class="py-20 bg-gradient-to-b from-[#f5f5f5] to-white section-padding">
+    <section
+      id="reviews"
+      class="py-20 bg-gradient-to-b from-[#f5f5f5] to-white section-padding"
+    >
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold mb-4 playfair">What Our Guests Say</h2>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Discover why our guests keep coming back to Riverlap Homestay. Each review tells a unique story of comfort, adventure, and authentic Kerala hospitality.
+            Discover why our guests keep coming back to Riverlap Homestay. Each
+            review tells a unique story of comfort, adventure, and authentic
+            Kerala hospitality.
           </p>
-          
+
           <!-- Overall Rating -->
-          <div class="max-w-4xl mx-auto mb-16 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 shadow-lg transform hover:scale-[1.02] transition-transform duration-300">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+          <div
+            class="max-w-4xl mx-auto mb-16 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 shadow-lg transform hover:scale-[1.02] transition-transform duration-300"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-8"
+            >
               <div class="text-center md:text-left">
-                <div class="text-7xl font-bold text-[#e67e22] mb-2 animate-pulse">4.9</div>
+                <div
+                  class="text-7xl font-bold text-[#e67e22] mb-2 animate-pulse"
+                >
+                  4.9
+                </div>
                 <div class="flex justify-center md:justify-start gap-1 mb-2">
-                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0s"></i>
-                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0.1s"></i>
-                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0.2s"></i>
-                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0.3s"></i>
-                  <i class="fas fa-star text-[#e67e22] animate-bounce" style="animation-delay: 0.4s"></i>
+                  <i
+                    class="fas fa-star text-[#e67e22] animate-bounce"
+                    style="animation-delay: 0s"
+                  ></i>
+                  <i
+                    class="fas fa-star text-[#e67e22] animate-bounce"
+                    style="animation-delay: 0.1s"
+                  ></i>
+                  <i
+                    class="fas fa-star text-[#e67e22] animate-bounce"
+                    style="animation-delay: 0.2s"
+                  ></i>
+                  <i
+                    class="fas fa-star text-[#e67e22] animate-bounce"
+                    style="animation-delay: 0.3s"
+                  ></i>
+                  <i
+                    class="fas fa-star text-[#e67e22] animate-bounce"
+                    style="animation-delay: 0.4s"
+                  ></i>
                 </div>
                 <p class="text-gray-600">Based on 100+ reviews</p>
               </div>
               <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="transform hover:scale-110 transition-transform duration-300">
+                <div
+                  class="transform hover:scale-110 transition-transform duration-300"
+                >
                   <div class="text-3xl font-bold text-[#e67e22]">98%</div>
                   <p class="text-sm text-gray-600">Cleanliness</p>
                 </div>
-                <div class="transform hover:scale-110 transition-transform duration-300">
+                <div
+                  class="transform hover:scale-110 transition-transform duration-300"
+                >
                   <div class="text-3xl font-bold text-[#e67e22]">99%</div>
                   <p class="text-sm text-gray-600">Location</p>
                 </div>
-                <div class="transform hover:scale-110 transition-transform duration-300">
+                <div
+                  class="transform hover:scale-110 transition-transform duration-300"
+                >
                   <div class="text-3xl font-bold text-[#e67e22]">97%</div>
                   <p class="text-sm text-gray-600">Service</p>
                 </div>
-                <div class="transform hover:scale-110 transition-transform duration-300">
+                <div
+                  class="transform hover:scale-110 transition-transform duration-300"
+                >
                   <div class="text-3xl font-bold text-[#e67e22]">96%</div>
                   <p class="text-sm text-gray-600">Value</p>
                 </div>
@@ -869,29 +1178,79 @@
 
           <!-- Booking Platform Links -->
           <div class="flex flex-wrap justify-center items-center gap-6 mb-12">
-            <a href="https://www.google.com/travel/hotels/entity/CgoIusqH8tr_xbtFEAE" target="_blank" class="group">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" alt="Google" class="w-8 h-8 object-contain">
+            <a
+              href="https://www.google.com/travel/hotels/entity/CgoIusqH8tr_xbtFEAE"
+              target="_blank"
+              class="group"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png"
+                  alt="Google"
+                  class="w-8 h-8 object-contain"
+                />
               </div>
             </a>
-            <a href="https://www.airbnb.co.in/rooms/16503560" target="_blank" class="group">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="Airbnb" class="w-8 h-8 object-contain">
+            <a
+              href="https://www.airbnb.co.in/rooms/16503560"
+              target="_blank"
+              class="group"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png"
+                  alt="Airbnb"
+                  class="w-8 h-8 object-contain"
+                />
               </div>
             </a>
-            <a href="https://www.booking.com/Share-HayKcc" target="_blank" class="group">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png" alt="Booking.com" class="w-8 h-8 object-contain">
+            <a
+              href="https://www.booking.com/Share-HayKcc"
+              target="_blank"
+              class="group"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png"
+                  alt="Booking.com"
+                  class="w-8 h-8 object-contain"
+                />
               </div>
             </a>
-            <a href="https://www.goibibo.com/hotels/river-lap-homestay-hotel-in-nileshwar-4893217758211010052/" target="_blank" class="group">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <img src="assets/goibibo.png" alt="Goibibo" class="w-8 h-8 object-contain">
+            <a
+              href="https://www.goibibo.com/hotels/river-lap-homestay-hotel-in-nileshwar-4893217758211010052/"
+              target="_blank"
+              class="group"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="assets/goibibo.png"
+                  alt="Goibibo"
+                  class="w-8 h-8 object-contain"
+                />
               </div>
             </a>
-            <a href="https://www.makemytrip.com/hotels/river_lap_homestay-details-nileshwar.html" target="_blank" class="group">
-              <div class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <img src="assets/mmt.png" alt="MakeMyTrip" class="w-8 h-8 object-contain">
+            <a
+              href="https://www.makemytrip.com/hotels/river_lap_homestay-details-nileshwar.html"
+              target="_blank"
+              class="group"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="assets/mmt.png"
+                  alt="MakeMyTrip"
+                  class="w-8 h-8 object-contain"
+                />
               </div>
             </a>
           </div>
@@ -901,25 +1260,42 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Location & Setting -->
           <div class="group">
-            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+            <div
+              class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300"
+            >
               <div class="flex items-center gap-3 mb-4">
-                <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-map-marker-alt text-xl"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800">Location & Setting</h3>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Location & Setting
+                </h3>
               </div>
               <p class="text-gray-700 mb-4">
-                "Riverlap is such an idyllic place. It is perfectly located between the river and the sea. You can easily enjoy both. The property is surrounded by coconut trees and has a beautiful natural pond."
+                "Riverlap is such an idyllic place. It is perfectly located
+                between the river and the sea. You can easily enjoy both. The
+                property is surrounded by coconut trees and has a beautiful
+                natural pond."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">A</div>
+                  <div
+                    class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold"
+                  >
+                    A
+                  </div>
                   <div>
                     <p class="font-semibold">Alina</p>
                     <p class="text-sm text-gray-500">Germany</p>
                   </div>
                 </div>
-                <a href="https://www.airbnb.co.in/rooms/16503560" target="_blank" class="text-blue-500 hover:text-blue-600 transition-colors">
+                <a
+                  href="https://www.airbnb.co.in/rooms/16503560"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-600 transition-colors"
+                >
                   <i class="fab fa-airbnb text-xl"></i>
                 </a>
               </div>
@@ -928,25 +1304,41 @@
 
           <!-- Host & Service -->
           <div class="group">
-            <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+            <div
+              class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300"
+            >
               <div class="flex items-center gap-3 mb-4">
-                <div class="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-concierge-bell text-xl"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800">Host & Service</h3>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Host & Service
+                </h3>
               </div>
               <p class="text-gray-700 mb-4">
-                "Idyllic location. This is the real Kerala. Vinod and his people are the most kind and thoughtful hosts. They went above and beyond to make our stay comfortable."
+                "Idyllic location. This is the real Kerala. Vinod and his people
+                are the most kind and thoughtful hosts. They went above and
+                beyond to make our stay comfortable."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold">C</div>
+                  <div
+                    class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold"
+                  >
+                    C
+                  </div>
                   <div>
                     <p class="font-semibold">Conor</p>
                     <p class="text-sm text-gray-500">United Kingdom</p>
                   </div>
                 </div>
-                <a href="https://www.airbnb.co.in/rooms/16503560" target="_blank" class="text-emerald-500 hover:text-emerald-600 transition-colors">
+                <a
+                  href="https://www.airbnb.co.in/rooms/16503560"
+                  target="_blank"
+                  class="text-emerald-500 hover:text-emerald-600 transition-colors"
+                >
                   <i class="fab fa-airbnb text-xl"></i>
                 </a>
               </div>
@@ -955,25 +1347,41 @@
 
           <!-- Food & Dining -->
           <div class="group">
-            <div class="bg-gradient-to-br from-rose-50 to-rose-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+            <div
+              class="bg-gradient-to-br from-rose-50 to-rose-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300"
+            >
               <div class="flex items-center gap-3 mb-4">
-                <div class="w-12 h-12 rounded-full bg-rose-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-rose-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-utensils text-xl"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800">Food & Dining</h3>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Food & Dining
+                </h3>
               </div>
               <p class="text-gray-700 mb-4">
-                "The food is out of this world! Authentic Kerala cuisine prepared with fresh local ingredients. The breakfast spread is amazing, and the seafood is to die for."
+                "The food is out of this world! Authentic Kerala cuisine
+                prepared with fresh local ingredients. The breakfast spread is
+                amazing, and the seafood is to die for."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold">P</div>
+                  <div
+                    class="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold"
+                  >
+                    P
+                  </div>
                   <div>
                     <p class="font-semibold">Priya</p>
                     <p class="text-sm text-gray-500">India</p>
                   </div>
                 </div>
-                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-rose-500 hover:text-rose-600 transition-colors">
+                <a
+                  href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html"
+                  target="_blank"
+                  class="text-rose-500 hover:text-rose-600 transition-colors"
+                >
                   <i class="fab fa-tripadvisor text-xl"></i>
                 </a>
               </div>
@@ -982,25 +1390,41 @@
 
           <!-- Activities & Experiences -->
           <div class="group">
-            <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+            <div
+              class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300"
+            >
               <div class="flex items-center gap-3 mb-4">
-                <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-compass text-xl"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800">Activities & Experiences</h3>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Activities & Experiences
+                </h3>
               </div>
               <p class="text-gray-700 mb-4">
-                "The backwater canoe ride was magical, and the fishing experience with local fishermen was unforgettable. The property offers the perfect balance of relaxation and adventure."
+                "The backwater canoe ride was magical, and the fishing
+                experience with local fishermen was unforgettable. The property
+                offers the perfect balance of relaxation and adventure."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">J</div>
+                  <div
+                    class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold"
+                  >
+                    J
+                  </div>
                   <div>
                     <p class="font-semibold">James</p>
                     <p class="text-sm text-gray-500">Australia</p>
                   </div>
                 </div>
-                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-purple-500 hover:text-purple-600 transition-colors">
+                <a
+                  href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html"
+                  target="_blank"
+                  class="text-purple-500 hover:text-purple-600 transition-colors"
+                >
                   <i class="fab fa-tripadvisor text-xl"></i>
                 </a>
               </div>
@@ -1009,25 +1433,41 @@
 
           <!-- Overall Experience -->
           <div class="group">
-            <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+            <div
+              class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300"
+            >
               <div class="flex items-center gap-3 mb-4">
-                <div class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-heart text-xl"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800">Overall Experience</h3>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Overall Experience
+                </h3>
               </div>
               <p class="text-gray-700 mb-4">
-                "A perfect blend of comfort and authentic Kerala experience. The property is beautiful, the staff is amazing, and the location is ideal. We can't wait to come back!"
+                "A perfect blend of comfort and authentic Kerala experience. The
+                property is beautiful, the staff is amazing, and the location is
+                ideal. We can't wait to come back!"
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold">R</div>
+                  <div
+                    class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold"
+                  >
+                    R
+                  </div>
                   <div>
                     <p class="font-semibold">Robert</p>
                     <p class="text-sm text-gray-500">United States</p>
                   </div>
                 </div>
-                <a href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html" target="_blank" class="text-amber-500 hover:text-amber-600 transition-colors">
+                <a
+                  href="https://www.tripadvisor.in/HotelHighlight-g3743224-d12316756-Reviews-River_Lap_Homestay-Nileshwar_Kasaragod_District_Kerala.html"
+                  target="_blank"
+                  class="text-amber-500 hover:text-amber-600 transition-colors"
+                >
                   <i class="fab fa-tripadvisor text-xl"></i>
                 </a>
               </div>
@@ -1036,25 +1476,41 @@
 
           <!-- Value & Comfort -->
           <div class="group">
-            <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300">
+            <div
+              class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-2xl transform group-hover:scale-[1.02] transition-all duration-300"
+            >
               <div class="flex items-center gap-3 mb-4">
-                <div class="w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                <div
+                  class="w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300"
+                >
                   <i class="fas fa-home text-xl"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800">Value & Comfort</h3>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Value & Comfort
+                </h3>
               </div>
               <p class="text-gray-700 mb-4">
-                "This is exactly what we were looking for - a peaceful retreat with authentic local experiences. The property is well-maintained, and every detail is taken care of."
+                "This is exactly what we were looking for - a peaceful retreat
+                with authentic local experiences. The property is
+                well-maintained, and every detail is taken care of."
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center text-white font-bold">S</div>
+                  <div
+                    class="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center text-white font-bold"
+                  >
+                    S
+                  </div>
                   <div>
                     <p class="font-semibold">Sophie</p>
                     <p class="text-sm text-gray-500">France</p>
                   </div>
                 </div>
-                <a href="https://www.airbnb.co.in/rooms/16503560" target="_blank" class="text-cyan-500 hover:text-cyan-600 transition-colors">
+                <a
+                  href="https://www.airbnb.co.in/rooms/16503560"
+                  target="_blank"
+                  class="text-cyan-500 hover:text-cyan-600 transition-colors"
+                >
                   <i class="fab fa-airbnb text-xl"></i>
                 </a>
               </div>
@@ -1070,11 +1526,14 @@
         <h2 class="text-4xl font-bold text-center mb-12">Getting Here</h2>
         <div class="max-w-5xl mx-auto">
           <p class="text-lg text-gray-700 text-center mb-10">
-            We're excited to welcome you to Riverlap Homestay! Here are the best ways to reach us:
+            We're excited to welcome you to Riverlap Homestay! Here are the best
+            ways to reach us:
           </p>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Airports -->
-            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg flex flex-col items-center h-full group hover:scale-[1.03] transition-transform duration-300">
+            <div
+              class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg flex flex-col items-center h-full group hover:scale-[1.03] transition-transform duration-300"
+            >
               <div class="flex items-center gap-4 mb-4">
                 <i class="fas fa-plane-departure text-4xl text-blue-500"></i>
                 <span class="text-2xl font-bold text-gray-800">Airports</span>
@@ -1082,35 +1541,57 @@
               <div class="w-full border-b border-blue-100 mb-4"></div>
               <ul class="w-full text-gray-700 text-base space-y-3">
                 <li class="flex items-center justify-between">
-                  <span><span class="font-semibold">Mangaluru (IXE)</span></span>
-                  <span class="inline-flex items-center bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"><i class="fas fa-road mr-1"></i>100 km / 2.5 hr</span>
+                  <span
+                    ><span class="font-semibold">Mangaluru (IXE)</span></span
+                  >
+                  <span
+                    class="inline-flex items-center bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"
+                    ><i class="fas fa-road mr-1"></i>100 km / 2.5 hr</span
+                  >
                 </li>
                 <li class="flex items-center justify-between">
                   <span><span class="font-semibold">Kannur (CNN)</span></span>
-                  <span class="inline-flex items-center bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"><i class="fas fa-road mr-1"></i>80 km / 2.5 hr</span>
+                  <span
+                    class="inline-flex items-center bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"
+                    ><i class="fas fa-road mr-1"></i>80 km / 2.5 hr</span
+                  >
                 </li>
               </ul>
             </div>
             <!-- Railway Stations -->
-            <div class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-8 shadow-lg flex flex-col items-center h-full group hover:scale-[1.03] transition-transform duration-300">
+            <div
+              class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-8 shadow-lg flex flex-col items-center h-full group hover:scale-[1.03] transition-transform duration-300"
+            >
               <div class="flex items-center gap-4 mb-4">
                 <i class="fas fa-train text-4xl text-green-600"></i>
-                <span class="text-2xl font-bold text-gray-800">Railway Stations</span>
+                <span class="text-2xl font-bold text-gray-800"
+                  >Railway Stations</span
+                >
               </div>
               <div class="w-full border-b border-emerald-100 mb-4"></div>
               <ul class="w-full text-gray-700 text-base space-y-3">
                 <li class="flex items-center justify-between">
-                  <span><span class="font-semibold">Kanhangad (KZE)</span></span>
-                  <span class="inline-flex items-center bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"><i class="fas fa-road mr-1"></i>15 km / 30 min</span>
+                  <span
+                    ><span class="font-semibold">Kanhangad (KZE)</span></span
+                  >
+                  <span
+                    class="inline-flex items-center bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"
+                    ><i class="fas fa-road mr-1"></i>15 km / 30 min</span
+                  >
                 </li>
                 <li class="flex items-center justify-between">
                   <span><span class="font-semibold">Kasargod (KGQ)</span></span>
-                  <span class="inline-flex items-center bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"><i class="fas fa-road mr-1"></i>40 km / 1 hr</span>
+                  <span
+                    class="inline-flex items-center bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"
+                    ><i class="fas fa-road mr-1"></i>40 km / 1 hr</span
+                  >
                 </li>
               </ul>
             </div>
             <!-- By Road -->
-            <div class="bg-gradient-to-br from-yellow-50 to-amber-100 rounded-2xl p-8 shadow-lg flex flex-col items-center h-full group hover:scale-[1.03] transition-transform duration-300">
+            <div
+              class="bg-gradient-to-br from-yellow-50 to-amber-100 rounded-2xl p-8 shadow-lg flex flex-col items-center h-full group hover:scale-[1.03] transition-transform duration-300"
+            >
               <div class="flex items-center gap-4 mb-4">
                 <i class="fas fa-car-side text-4xl text-amber-600"></i>
                 <span class="text-2xl font-bold text-gray-800">By Road</span>
@@ -1119,11 +1600,17 @@
               <ul class="w-full text-gray-700 text-base space-y-3">
                 <li class="flex items-center justify-between">
                   <span><span class="font-semibold">Mangaluru</span></span>
-                  <span class="inline-flex items-center bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"><i class="fas fa-road mr-1"></i>90 km / 2 hr</span>
+                  <span
+                    class="inline-flex items-center bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"
+                    ><i class="fas fa-road mr-1"></i>90 km / 2 hr</span
+                  >
                 </li>
                 <li class="flex items-center justify-between">
                   <span><span class="font-semibold">Calicut</span></span>
-                  <span class="inline-flex items-center bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"><i class="fas fa-road mr-1"></i>150 km / 4 hr</span>
+                  <span
+                    class="inline-flex items-center bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full ml-2"
+                    ><i class="fas fa-road mr-1"></i>150 km / 4 hr</span
+                  >
                 </li>
               </ul>
             </div>
@@ -1144,17 +1631,34 @@
               </p>
               <div class="flex items-center gap-4 mb-4">
                 <i class="fas fa-phone-alt text-2xl text-[#e67e22]"></i>
-                <a href="tel:+919400902356" class="text-xl md:text-2xl font-bold text-gray-800 hover:text-[#e67e22] transition-colors duration-300">+91 94009 02356</a>
+                <a
+                  href="tel:+919400902356"
+                  class="text-xl md:text-2xl font-bold text-gray-800 hover:text-[#e67e22] transition-colors duration-300"
+                  >+91 94009 02356</a
+                >
+              </div>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fas fa-phone-alt text-2xl text-[#e67e22]"></i>
+                <a
+                  href="tel:+919495512356"
+                  class="text-xl md:text-2xl font-bold text-gray-800 hover:text-[#e67e22] transition-colors duration-300"
+                  >+91 94955 12356</a
+                >
               </div>
               <div class="flex items-center gap-4 mb-6">
                 <i class="fas fa-envelope text-2xl text-[#e67e22]"></i>
-                <a href="mailto:info@riverlaphomestay.com" class="text-xl md:text-2xl font-bold text-gray-800 hover:text-[#e67e22] transition-colors duration-300">info@riverlaphomestay.com</a>
+                <a
+                  href="mailto:info@riverlaphomestay.com"
+                  class="text-xl md:text-2xl font-bold text-gray-800 hover:text-[#e67e22] transition-colors duration-300"
+                  >kvinukumark@gmail.com</a
+                >
               </div>
             </div>
 
             <div>
               <p class="text-lg mb-4 text-gray-700">
-                <strong>Address:</strong> Azhithala Road, Thaikadappuram, Nileshwar, Kerala, India 671315
+                <strong>Address:</strong> Azhithala Road, Thaikadappuram,
+                Nileshwar, Kerala, India 671315
               </p>
             </div>
 
@@ -1163,28 +1667,44 @@
                 You can also book your stay through these trusted platforms:
               </p>
               <div class="flex flex-wrap items-center justify-start gap-6">
-                <a href="https://www.airbnb.co.in/rooms/16503560" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-28 h-12">
+                <a
+                  href="https://www.airbnb.co.in/rooms/16503560"
+                  target="_blank"
+                  class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-28 h-12"
+                >
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png"
                     alt="Book on Airbnb"
                     class="w-full h-full object-contain"
                   />
                 </a>
-                <a href="https://www.booking.com/Share-HayKcc" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-28 h-12">
+                <a
+                  href="https://www.booking.com/Share-HayKcc"
+                  target="_blank"
+                  class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-28 h-12"
+                >
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png"
                     alt="Book on Booking.com"
                     class="w-full h-full object-contain"
                   />
                 </a>
-                <a href="https://www.goibibo.com/hotels/river-lap-homestay-hotel-in-nileshwar-4893217758211010052/" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-28 h-12">
+                <a
+                  href="https://www.goibibo.com/hotels/river-lap-homestay-hotel-in-nileshwar-4893217758211010052/"
+                  target="_blank"
+                  class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-28 h-12"
+                >
                   <img
                     src="assets/goibibo.png"
                     alt="Goibibo"
                     class="w-full h-full object-contain"
                   />
                 </a>
-                <a href="https://www.makemytrip.com/hotels/river_lap_homestay-details-nileshwar.html" target="_blank" class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-28 h-12">
+                <a
+                  href="https://www.makemytrip.com/hotels/river_lap_homestay-details-nileshwar.html"
+                  target="_blank"
+                  class="inline-flex items-center justify-center border border-gray-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300 cursor-pointer hover:border-gray-300 w-28 h-12"
+                >
                   <img
                     src="assets/mmt.png"
                     alt="MakeMyTrip"
@@ -1195,13 +1715,14 @@
             </div>
           </div>
           <div class="w-full">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.567450957015!2d75.11708457516586!3d12.209808131121719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba470778adb9d31%3A0x457717fdae41e53a!2sRiverlap%20homestay!5e0!3m2!1sen!2sus!4v1742312083479!5m2!1sen!2sus" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.567450957015!2d75.11708457516586!3d12.209808131121719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba470778adb9d31%3A0x457717fdae41e53a!2sRiverlap%20homestay!5e0!3m2!1sen!2sus!4v1742312083479!5m2!1sen!2sus"
               class="w-full h-[300px] md:h-[450px] rounded-lg shadow-lg"
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
             </iframe>
           </div>
         </div>
@@ -1217,109 +1738,113 @@
 
     <script>
       // Navbar scroll effect
-      window.addEventListener('scroll', function() {
-        const navbar = document.getElementById('navbar');
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
         if (window.scrollY > 50) {
-          navbar.classList.add('navbar-scrolled');
+          navbar.classList.add("navbar-scrolled");
         } else {
-          navbar.classList.remove('navbar-scrolled');
+          navbar.classList.remove("navbar-scrolled");
         }
       });
 
       // Smooth scroll for all anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
           e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
+          const target = document.querySelector(this.getAttribute("href"));
           if (target) {
             target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
+              behavior: "smooth",
+              block: "start",
             });
           }
         });
       });
 
       // Mobile menu functionality
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
 
       function toggleMobileMenu() {
-        mobileMenu.classList.toggle('active');
-        mobileMenuOverlay.classList.toggle('active');
-        document.body.classList.toggle('overflow-hidden');
-        
+        mobileMenu.classList.toggle("active");
+        mobileMenuOverlay.classList.toggle("active");
+        document.body.classList.toggle("overflow-hidden");
+
         // Toggle between menu and close icons
-        const icon = mobileMenuButton.querySelector('i');
-        if (mobileMenu.classList.contains('active')) {
-          icon.classList.remove('fa-bars');
-          icon.classList.add('fa-times');
+        const icon = mobileMenuButton.querySelector("i");
+        if (mobileMenu.classList.contains("active")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
         } else {
-          icon.classList.remove('fa-times');
-          icon.classList.add('fa-bars');
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
         }
       }
 
-      mobileMenuButton.addEventListener('click', toggleMobileMenu);
-      mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+      mobileMenuButton.addEventListener("click", toggleMobileMenu);
+      mobileMenuOverlay.addEventListener("click", toggleMobileMenu);
 
       // Close mobile menu when clicking on a link
-      mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
           toggleMobileMenu();
         });
       });
 
       // Close mobile menu on window resize
-      window.addEventListener('resize', () => {
-        if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
+      window.addEventListener("resize", () => {
+        if (
+          window.innerWidth > 768 &&
+          mobileMenu.classList.contains("active")
+        ) {
           toggleMobileMenu();
         }
       });
 
       // Gallery tab functionality
-      const galleryTabs = document.querySelectorAll('.gallery-tab');
-      const galleryCategories = document.querySelectorAll('.gallery-category');
+      const galleryTabs = document.querySelectorAll(".gallery-tab");
+      const galleryCategories = document.querySelectorAll(".gallery-category");
 
-      galleryTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          const category = tab.getAttribute('data-category');
-          
+      galleryTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const category = tab.getAttribute("data-category");
+
           // Remove active class from all tabs and categories
-          galleryTabs.forEach(t => {
-            t.classList.remove('active', 'bg-[#e67e22]', 'text-white');
-            t.classList.add('bg-gray-200', 'text-gray-700');
+          galleryTabs.forEach((t) => {
+            t.classList.remove("active", "bg-[#e67e22]", "text-white");
+            t.classList.add("bg-gray-200", "text-gray-700");
           });
-          galleryCategories.forEach(cat => cat.classList.add('hidden'));
-          
+          galleryCategories.forEach((cat) => cat.classList.add("hidden"));
+
           // Add active class to clicked tab and corresponding category
-          tab.classList.add('active', 'bg-[#e67e22]', 'text-white');
-          tab.classList.remove('bg-gray-200', 'text-gray-700');
-          document.getElementById(category).classList.remove('hidden');
+          tab.classList.add("active", "bg-[#e67e22]", "text-white");
+          tab.classList.remove("bg-gray-200", "text-gray-700");
+          document.getElementById(category).classList.remove("hidden");
         });
       });
 
       // Activities tab functionality
-      const activityTabs = document.querySelectorAll('.activity-tab');
-      const activityCategories = document.querySelectorAll('.activity-category');
+      const activityTabs = document.querySelectorAll(".activity-tab");
+      const activityCategories =
+        document.querySelectorAll(".activity-category");
 
-      activityTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          const category = tab.getAttribute('data-category');
-          
+      activityTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const category = tab.getAttribute("data-category");
+
           // Remove active class from all tabs and categories
-          activityTabs.forEach(t => {
-            t.classList.remove('active', 'bg-[#e67e22]', 'text-white');
-            t.classList.add('bg-gray-200', 'text-gray-700');
+          activityTabs.forEach((t) => {
+            t.classList.remove("active", "bg-[#e67e22]", "text-white");
+            t.classList.add("bg-gray-200", "text-gray-700");
           });
-          activityCategories.forEach(cat => cat.classList.add('hidden'));
-          
+          activityCategories.forEach((cat) => cat.classList.add("hidden"));
+
           // Add active class to clicked tab and corresponding category
-          tab.classList.add('active', 'bg-[#e67e22]', 'text-white');
-          tab.classList.remove('bg-gray-200', 'text-gray-700');
-          document.getElementById(category).classList.remove('hidden');
+          tab.classList.add("active", "bg-[#e67e22]", "text-white");
+          tab.classList.remove("bg-gray-200", "text-gray-700");
+          document.getElementById(category).classList.remove("hidden");
         });
       });
     </script>
